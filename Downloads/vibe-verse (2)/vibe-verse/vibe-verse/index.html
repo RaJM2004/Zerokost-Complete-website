@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Zerokost delivers cutting-edge AI, quantum computing, and digital consulting solutions. Transform your business with our custom software development and innovative technology services." />
+    <link rel="icon" href="/logo4.png" type="image/png" />
+    <title>Zerokost | AI & Quantum Computing Solutions | Digital Consulting | Custom Software Development</title>
+
+    <!-- SEO & Social meta tags -->
+    <!-- NOTE: I used https://zerokost.com as the canonical domain. If your site uses a different domain (e.g. with www), update the canonical and JSON-LD URLs accordingly. -->
+    <link rel="canonical" href="https://zerokost.com/" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph -->
+    <meta property="og:site_name" content="Zerokost" />
+    <meta property="og:title" content="Zerokost | AI, Quantum Computing & Digital Consulting" />
+    <meta property="og:description" content="Zerokost delivers cutting-edge AI, quantum computing, and digital consulting solutions. Transform your business with custom software and innovative technology services." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://zerokost.com/" />
+    <meta property="og:image" content="https://zerokost.com/logo4.png" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Zerokost | AI, Quantum Computing & Digital Consulting" />
+    <meta name="twitter:description" content="Zerokost delivers cutting-edge AI, quantum computing, and digital consulting solutions. Transform your business with custom software and innovative technology services." />
+    <meta name="twitter:image" content="https://zerokost.com/logo4.png" />
+
+    <!-- Structured data (JSON-LD) for Organization + WebSite to help search engines show richer results -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://zerokost.com/#organization",
+          "name": "Zerokost",
+          "url": "https://zerokost.com/",
+          "logo": "https://zerokost.com/logo4.png",
+          "sameAs": []
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://zerokost.com/#website",
+          "url": "https://zerokost.com/",
+          "name": "Zerokost",
+          "publisher": {
+            "@id": "https://zerokost.com/#organization"
+          },
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://zerokost.com/?s={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        }
+      ]
+    }
+    </script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script type="module" src="/client/App.tsx"></script>
+  </body>
+</html>
