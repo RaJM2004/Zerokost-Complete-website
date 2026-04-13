@@ -1,73 +1,78 @@
-# React + TypeScript + Vite
+# Zerokost Complete Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the Zerokost official website repository. This project is built using modern web technologies to provide a high-performance, responsive, and visually stunning experience.
 
-Currently, two official plugins are available:
+## 🚀 Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React 19**: Modern UI library
+- **TypeScript**: Type-safe development
+- **Vite**: Ultra-fast build tool
+- **Tailwind CSS**: Utility-first styling
+- **Framer Motion**: Smooth animations
+- **Lucide React**: Clean iconography
 
-## React Compiler
+## 🛠️ Prerequisites
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Before you begin, ensure you have the following installed:
+- [Node.js](https://nodejs.org/) (Version 18 or higher recommended)
+- [npm](https://www.npmjs.com/) (usually comes with Node.js)
 
-## Expanding the ESLint configuration
+## 📦 Installation Guide
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Follow these steps to set up the project locally:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/RaJM2004/Zerokost-Complete-website.git
+   ```
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+2. **Navigate to the project directory:**
+   ```bash
+   cd Zerokost-Complete-website
+   ```
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+3. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+## 💻 Running the Project
+
+### Development Mode
+To start the development server with Hot Module Replacement (HMR):
+```bash
+npm run dev
+```
+The application will be available at `http://localhost:5173`.
+
+### Building for Production
+To create an optimized production build:
+```bash
+npm run build
+```
+The output files will be in the `dist` folder.
+
+### Preview Production Build
+To see what the production build looks like locally:
+```bash
+npm run preview
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📂 Project Structure
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- `src/components`: Reusable UI components (Hero, Navbar, Showcase, etc.)
+- `src/pages`: Main application pages (Home, About, Careers, etc.)
+- `src/data`: Static data and configuration files
+- `public/`: Static assets like images and video files
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🤝 Contributing
+
+1. Fork the project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+---
+
+Developed by the Zerokost Team.
